@@ -18,6 +18,6 @@ class App:
         pass
 
 if __name__ == '__main__':
-    app = App(os.getenviron('dev'))
+    app = App(os.getenviron("ENV"))
     app.read_config()
     app.run()
