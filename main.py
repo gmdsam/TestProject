@@ -14,6 +14,11 @@ class App:
         for service in services:
             service.run()
 
+    def update_config(self) -> None:
+        """
+        Method to update configuration on the fly
+        """
+
     def run():
         pass
 
