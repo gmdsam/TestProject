@@ -14,10 +14,15 @@ class App:
         for service in services:
             service.run()
 
+    def update_config(self) -> None:
+        """
+        Method to update configuration on the fly
+        """
+
     def run():
         pass
 
 if __name__ == '__main__':
-    app = App(os.getenviron("ENV"))
+    app = App(os.getenviron('ENVIRONMENT'))
     app.read_config()
     app.run()
